@@ -11,5 +11,5 @@ git push -f git@github.com:320wuyanzu/PG-CN.git master:gh-pages
 :: 再push源文档
 cd ../../../
 git add *
-git commit -m"第一章基本完成"
+git commit -m"第二章基本完成"
 git push -f git@github.com:320wuyanzu/PG-CN.git master:master
