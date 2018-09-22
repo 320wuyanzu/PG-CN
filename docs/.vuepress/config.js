@@ -7,26 +7,32 @@ module.exports = {
         nav: [
             { text: 'Personal Homepage', link: 'https://320wuyanzu.github.io' },
             { text: '考纲目录', link: '/' },
-            { text: '概述', link:'/1/'},
-            { text: '物理层', link:'/2/'},
-            { text: '数据链路层', link:'/3/'},
-            { text: '网络层', link:'/4/'},
-            { text: '传输层', link:'/5/'},
-            { text: '应用层', link:'/6/'},
-            { text: '网络安全', link:'/7/'},
-            { text: '视频、音频与无线网络', link:'/8/'},
-            { text: '下一代因特网', link:'/9/'}
+            { text: '概述', link:'1'},
+            { text: '物理层', link:'2'},
+            { text: '数据链路层', link:'3'},
+            { text: '网络层', link:'4'},
+            { text: '传输层', link:'5'},
+            { text: '应用层', link:'6'},
+            { text: '网络安全', link:'7'},
+            { text: '视频、音频与无线网络', link:'8'},
+            { text: '下一代因特网', link:'9'}
         ],
         sidebarDepth: 2,
-        sidebar: sidebar_group()
+        sidebar: sidebar_divide()
     }
 }
 
 
+function sidebar_divide(){
+    return{
+        '/': ['1','2','3','4','5','6','7','8','9']
+    }
+}
+
 function sidebar_group(){
     let C1 = {
         title:'第一章 - 概述',
-        children:['/1/1','/1/2','/1/3','/1/4','/1/5','/1/6','/1/7']
+        children:['/1/1','/1/2','/1/3','/1/5','/1/6','/1/7']
     };
     let C2 = {
         title:'第二章 - 物理层',
