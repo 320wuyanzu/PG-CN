@@ -1,4 +1,7 @@
 module.exports = {
+    head: [
+        ['link', { rel: 'stylesheet', href: '/katex.min.css' }]
+    ],
     base: '/PG-CN/',
     title: '计算机网络(803)考研复习笔记',
     description: '计算机网络(第六版)-谢希仁',
@@ -19,6 +22,11 @@ module.exports = {
         ],
         sidebarDepth: 2,
         sidebar: sidebar_divide()
+    },
+    markdown: {
+        config: md=>{
+            md.use(require('markdown-it-katex'));
+        }
     }
 }
 
