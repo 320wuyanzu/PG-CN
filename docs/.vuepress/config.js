@@ -6,7 +6,7 @@ module.exports = {
     title: '计算机网络(803)考研复习笔记',
     description: '计算机网络(第六版)-谢希仁',
     themeConfig: {
-        lastUpdated: '最后一次更新',
+        lastUpdated: '最后一次编辑',
         nav: [
             { text: 'Personal Homepage', link: 'https://320wuyanzu.github.io' },
             { text: '考纲目录', link: '/' },
